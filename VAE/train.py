@@ -44,10 +44,8 @@ for epoch in range(NUM_EPOCHS):
         optimizer.step()
         loop.set_postfix(loss=loss.item())
 
-
+# Inference
 model = model.to("cpu")
-
-
 def inference(digit, num_examples=1):
     for x, y in dataset:
         if y == digit:
