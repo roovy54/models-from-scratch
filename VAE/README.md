@@ -1,5 +1,9 @@
 # Variational Autoencoder (VAE)
 
+<p align="center">
+<img src="VAE-Arch.png" alt="Alt text" width="700"/>
+</p>
+
 ## Introduction
 VAE was created to solve the latent space issue that was present regular autoencoders. Key features of a VAE is its **encoder**, **decoder**, **loss function** and **reparameterization**.
 
