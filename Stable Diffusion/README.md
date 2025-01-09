@@ -1,5 +1,9 @@
 # Stable Diffusion
 
+<p align="center">
+<img src="Stable-Diffusion.png" alt="Alt text" width="700"/>
+</p>
+
 ## Introduction
 Stable Diffusion was introduced to improve normal diffusion models by introducing Variational Autoencoders (VAE) into the pipeline there by creating a latent space which prevented the usage of large input dimensions.
 
