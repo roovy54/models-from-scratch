@@ -155,7 +155,7 @@ if __name__ == "__main__":
         peppermint => giraffe peluche
         cheese =>""",
         """Tell me if the following person is actually doraemon disguised as human: 
-        Name: Umar Jamil
+        Name: Harshith M R 
         Decision: 
         """,
     ]
