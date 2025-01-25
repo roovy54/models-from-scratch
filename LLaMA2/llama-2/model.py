@@ -158,7 +158,7 @@ class SelfAttention(nn.Module):
 
         # (b, hq, 1, head_dim) @ (b, hq, head_dim, seq_len_kv) -> (b, hq, 1, seqlen_kv)
         scores = torch.matmul(xq, keys.transpose(2, 3)) / math.sqrt(self.head_dim)
-        scores = F.softmac(scores.float(), dim=-1).type_as(xq)
+        scores = F.softmax(scores.float(), dim=-1).type_as(xq)
 
         # (b, hq, q, seq_len) @ (b, hq, seq_len_kv) -> (b, hq, 1, head_dim)
         output = torch.matmul(scores, values)
